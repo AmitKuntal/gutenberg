@@ -6,10 +6,76 @@
   height: 40vmin;
   pointer-events: none;
 }
+body{
+  background-color:  #F8F7FF;
+}
+
+.container{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.bluecolor{
+  color: #5E56E7;
+}
+
+.categories{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.icon{
+  width: 5vw;
+  height: 5vh;
+}
+
+.category{
+  margin-top: 3vw;
+  min-width: 30vw;
+  background-color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding:.8vw;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 2px 2px 2px 2px  #F0F0F6;
+}
+
+.category > div{
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.header{
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  background-image: url('./images/Pattern.svg');
+  padding-left: 10vw;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container{
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  .category{
+    margin-top: 5vw;
+    width: 80vw;
+  }
+  
+  .categoryName{
+    margin-left: 1vw;
   }
 }
 
