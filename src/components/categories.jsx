@@ -10,13 +10,13 @@ import Politics from './../images/Politics.svg';
 export default function Categories(){
     return(
         <div className="container categories">
-            <Category img={Fiction} name="FICTION"/>
-            <Category img={Philosophy} name="PHILOSOPHY"/>
-            <Category img={Drama} name="DRAMA"/>
-            <Category img={History} name="HISTORY"/>
-            <Category img={Humour} name="HUMOUR"/>
-            <Category img={Adventure} name="ADVENTURE"/>
-            <Category img={Politics} name="POLITICS"/>
+            <Category img={Fiction} name="Fiction"/>
+            <Category img={Philosophy} name="Philosophy"/>
+            <Category img={Drama} name="Drama"/>
+            <Category img={History} name="History"/>
+            <Category img={Humour} name="Humour"/>
+            <Category img={Adventure} name="Adventure"/>
+            <Category img={Politics} name="Politics"/>
         </div>
     )
 }

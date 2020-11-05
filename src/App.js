@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import Home from './components/home';
+import ViewBooks from './components/viewbooks';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
         <Switch>
           <Route exact path="/">
               <Home />
+          </Route>
+          <Route exact path="/:category">
+              <ViewBooks />
           </Route>
         </Switch>
     </Router> 
