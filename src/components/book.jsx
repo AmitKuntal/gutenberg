@@ -1,9 +1,11 @@
+import Authors from './authors';
+
 export default function Book(props){
     return (
         <div className="book_card">
-            <img src={'https://www.gutenberg.org/cache/epub/11/pg11.cover.medium.jpg'} alt="book-cover"/>
-            <span className="book_title">Alice's Adventures in Wonderland</span>
-            <span className="book_author">Carroll, Lewis</span>
+            <img src={props.book.formats["image/jpeg"]} alt="book-cover"/>
+            <span className="book_title">{props.book.title}</span>
+            <Authors authors={props.book.authors} />
         </div>
     )
 }
