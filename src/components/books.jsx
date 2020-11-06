@@ -10,7 +10,7 @@ export default class Books extends React.Component{
     }
 
     componentWillMount(){
-        fetch(BASE_URL+'books/')
+        fetch(BASE_URL+'books/?topic='+this.props.categoryName)
         .then(res=>res.json())
         .then(response=>{
             this.setState({books:response.results, next: response.next})
